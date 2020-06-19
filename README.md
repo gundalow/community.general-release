@@ -7,18 +7,23 @@ My idea is to have this as a pinned and locked (i.e. readonly except for repo me
 
 ## Introduction
 
-This issue describes *how* and *when* community.general is released, and to announce updates to the release/versioning schedule. The next section (Next release) is always updated to contain the next version to be released. Other changes to this first post are always announced by separate posts in this issue.
+This issue describes *how* and *when* community.general and community.network are released, and to announce updates to the release/versioning schedule. The next section (Next release) is always updated to contain the next version to be released. Other changes to this first post are always announced by separate posts in this issue.
 
 ## Next release
 
-0.2.0 (end of this week)
+0.2.0 (YYYY-MMM-DDD)
 
 ## Releasing schedule for major and minor versions
 
-- around 2020-06-19: 0.2.0 (a couple of days after ansible-base 2.10 beta is out; released from `master` branch)
+- around 2020-06-19: 0.2.0 (a couple of days after ansible-base 2.10 beta 1 is out; released from `master` branch)
 - last week of 2020-07: 1.0.0 **major release**
 
-From then on, release minor versions every two months, and major versions every 6 months. The precise dates will be announced on time. Before Ansible releases we might introduce additional minor releases to fix issues.
+From then on:
+
+* release minor versions every two months
+* major versions every 6 months.
+
+The precise dates will be announced on time. Before Ansible releases we might introduce additional minor releases to fix issues.
 
 - (maybe 2020-08-xx: 1.1.0 - around ansible-base 2.10 final release; if we release 1.1.0 then, the next minor versions will get adjusted)
 - 2020-09-xx: 1.1.0
@@ -29,13 +34,13 @@ From then on, release minor versions every two months, and major versions every 
 - mid of 2022: 5.0.0 **major release**
 - ...
 
-If no new commit has been merged for a minor release, it will be skipped. Major versions will not be skipped.
+If no new commit has been merged for a minor release, it **must** be skipped. Major versions **must not** be skipped.
 
 The schedule for minor versions might be adjusted in the future (maybe once per month, maybe something else). The release schedule for patch versions (see below) would be adjusted.
 
 ## Releasing schedule for patch versions
 
-- Patch versions `x.y.z` until the last minor release of a major release branch will only be released when necessary. The intended frequency is *never*, they are reserved for packaging failures, and fixing major breakage / security problems.
+- Patch versions `x.y.z` until the last minor release of a major release branch will only be released when necessary. The intended frequency is *never*, they are reserved for packaging failures, or fixing major breakage / security problems.
 - Once the last minor release of a major release branch (usually `x.2.0`, generally `x.Y.0`) has been released, there will be bugfix releases `x.Y.z`.
 - These releases will happen every two months and when necessary.
 
