@@ -11,7 +11,7 @@ This issue describes *how* and *when* community.general and community.network ar
 
 ## Next release
 
-0.2.0 (YYYY-MMM-DDD)
+1.0.0 (last week of July 2020)
 
 ## Releasing schedule for major and minor versions
 
